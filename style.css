@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background-size: contain;
+    background-color: aliceblue;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.header {
+    background-image: url(image/Header_Background.png);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    min-height: 1000px;
+    text-align: center;
+    clear: both;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.loremlist {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title_h1 {
+    color: #222328;
+    font-family: "Reey";
+    font-size: 75px;
+    font-weight: 400;
+}
+
+.title_h2 {
+    color: #2f3135;
+    font-family: "Open Sans";
+    font-size: 27px;
+    font-weight: 400;
+}
+
+
+/*  */
+
+@font-face {
+    font-family: Reey;
+    /* Гарнитура шрифта */
+    src: url(font/Reey-Regular.otf);
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Open Sans;
+    /* Гарнитура шрифта */
+    src: url(font/OpenSans-Light.ttf);
+    /* Путь к файлу со шрифтом */
+}
