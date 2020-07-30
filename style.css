@@ -22,7 +22,7 @@ body {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    clear: both;
+    text-align: center;
 }
 
 
@@ -72,23 +72,32 @@ header .image {
 }
 
 header .image img {
-    padding-top: 116px;
-    padding-left: 107px;
+    margin-top: 196px;
+    margin-left: 107px;
 }
 
 header .menu {
     float: right;
     margin-bottom: 30px;
-    padding-top: 68px;
-    padding-right: 58px;
+    margin-top: 68px;
+    margin-right: 58px;
 }
 
 header .menu li {
-    padding-left: 63px;
+    margin-left: 63px;
 }
 
 header .menu li a {
     color: #ffffff;
+}
+
+header h1 {
+    float: left;
+    margin-top: 328px;
+    color: #ffffff;
+    font-family: "Reey";
+    font-size: 75px;
+    font-weight: 400;
 }
 
 
@@ -144,6 +153,10 @@ form:hover {
 
 form:hover input {
     display: block;
+}
+
+form:hover .fa {
+    color: white;
 }
 
 
