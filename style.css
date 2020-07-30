@@ -1,18 +1,11 @@
 body {
     margin: 0;
     background-size: contain;
-    background-color: aliceblue;
+    background-color: #ffffff;
 }
 
-.container {
-    width: 90%;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
 
-.header {
+/* .header {
     background-image: url(image/Header_Background.png);
     background-size: cover;
     background-position: 0 0;
@@ -22,7 +15,142 @@ body {
     clear: both;
     padding-top: 50px;
     padding-bottom: 50px;
+} */
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
 }
+
+
+/* ONE GROUP */
+
+
+/* menu field */
+
+.brand {
+    font-size: 30px;
+}
+
+.menu {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+
+/* Header */
+
+header {
+    background-image: url(image/Header_Background.png);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    min-height: 1000px;
+    text-align: center;
+    clear: both;
+}
+
+header .image {
+    float: left;
+}
+
+header .image img {
+    padding-top: 116px;
+    padding-left: 107px;
+}
+
+header .menu {
+    float: right;
+    margin-bottom: 30px;
+    padding-top: 68px;
+    padding-right: 58px;
+}
+
+header .menu li {
+    padding-left: 63px;
+}
+
+header .menu li a {
+    color: #ffffff;
+}
+
+
+/* seach field */
+
+form {
+    position: relative;
+    top: -10px;
+    width: 183px;
+    height: 51px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    outline: 0;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    outline: 0;
+    border: 4px solid white;
+    background-image: url(image/Search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    background-color: #ffffff;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+form:hover {
+    cursor: pointer;
+}
+
+form:hover input {
+    display: block;
+}
+
+
+/*  */
+
+
+/* TWO GROUP */
 
 .loremlist {
     padding-top: 50px;
