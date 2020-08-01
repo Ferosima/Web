@@ -366,6 +366,52 @@ group_2 button {
     text-transform: uppercase;
 }
 
+group_3 {
+    position: relative;
+    min-height: 1513pxpx;
+}
+
+group_3 .row {
+    display: flex;
+}
+
+group_3 .column {
+    padding-top: 54px;
+    flex: 50%;
+    text-align: left;
+}
+
+group_3 .column h1 {
+    color: #27292c;
+    font-family: "Open Sans-Extrabold";
+    font-size: 58px;
+    font-weight: 700;
+    text-align: left;
+}
+
+group_3 .column p {
+    color: #27292c;
+    font-family: "Open Sans";
+    font-size: 29px;
+    font-weight: 700;
+}
+
+group_3 button {
+    width: 334px;
+    height: 75px;
+    margin-top: 75px;
+    margin-bottom: 71px;
+    background-color: #27292c;
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+    font-family: "Open Sans-Extrabold";
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 
 /*  */
 
