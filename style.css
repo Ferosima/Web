@@ -5,15 +5,14 @@ body {
 }
 
 .container {
+    position: relative;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1456px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    z-index: 1;
 }
-
-
-/* ONE GROUP */
 
 
 /* menu field */
@@ -32,40 +31,24 @@ body {
     text-transform: uppercase;
 }
 
+.menu div {
+    float: left;
+    list-style: none;
+}
+
 .menu li a {
     text-decoration: none;
 }
 
 
-/* Header */
+/* HEADER */
 
 header {
+    position: relative;
     background-image: url(image/Header_Background.png);
     background-size: cover;
-    background-position: 0 0;
     background-repeat: no-repeat;
     min-height: 1056px;
-}
-
-img[id="logo"] {
-    float: left;
-    position: absolute;
-    margin-top: 196px;
-    margin-left: 107px;
-}
-
-img[id="meal_1"] {
-    position: absolute;
-    float: left;
-    margin-top: 248px;
-    margin-left: 766px;
-}
-
-img[id="meal_2"] {
-    position: absolute;
-    float: left;
-    margin-top: 723px;
-    margin-left: 632px;
 }
 
 header .menu {
@@ -104,13 +87,12 @@ header h2 {
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
-    /* Text style for "LOREMIPSUM" */
     letter-spacing: 4.61px;
 }
 
 header p[id="text_1"] {
     float: left;
-    margin-top: 26px;
+    margin-top: 749px;
     margin-left: 102px;
     position: absolute;
     color: #ffffff;
@@ -120,9 +102,19 @@ header p[id="text_1"] {
     opacity: 0.9;
 }
 
-header button {
+
+/* button "READ MORE" */
+
+header div[id="button"] {
+    position: absolute;
     margin-top: 676px;
     margin-left: 102px;
+}
+
+header button {
+    /* position: absolute;
+    margin-top: 676px;
+    margin-left: 102px; */
     width: 218px;
     height: 47px;
     background-color: #ffffff;
@@ -137,7 +129,40 @@ header button {
 }
 
 .header button:active {
-    position: relative;
+    position: absolute;
+}
+
+
+/* image logo and  */
+
+header div[id="logo"] {
+    position: absolute;
+    width: 136px;
+    height: 109px;
+    margin-top: 196px;
+    margin-left: 107px;
+    z-index: 1;
+    background-image: url(image/Place_Your_Logo_Here_\(Double_Click_to_Edit\).png);
+}
+
+header div[id="meal_1"] {
+    position: absolute;
+    width: 632px;
+    height: 620px;
+    margin-left: 762px;
+    margin-top: 248px;
+    z-index: 2;
+    background-image: url(image/Place_Your_Image_Here_\(Double_Click_to_Edit\).png);
+}
+
+header div[id="meal_2"] {
+    position: absolute;
+    width: 293px;
+    height: 290px;
+    margin-top: 723px;
+    margin-left: 628px;
+    z-index: 3;
+    background-image: url(image/Place_Your_Image_Here_\(Double_Click_to_Edit\)_.png);
 }
 
 
@@ -178,7 +203,6 @@ input {
     background-image: url(image/Search.svg);
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
     background-color: #ffffff;
     top: 0;
     right: 0;
@@ -203,25 +227,45 @@ form:hover .fa {
 /*  */
 
 
-/* TWO GROUP */
+/* GROUP 1 */
 
-.loremlist {
-    padding-top: 50px;
-    padding-bottom: 50px;
+group_1 {
+    position: relative;
+    z-index: 1;
+    min-height: 1117px;
+    margin-top: 35px;
 }
 
-.title_h1 {
+group_1 h1[id="head"] {
+    padding-top: 35px;
     color: #222328;
     font-family: "Reey";
     font-size: 75px;
     font-weight: 400;
 }
 
-.title_h2 {
+group_1 p[id="head text"] {
     color: #2f3135;
     font-family: "Open Sans";
     font-size: 27px;
     font-weight: 400;
+}
+
+group_1 .menu {
+    width: 1440px;
+    position: absolute;
+    float: center;
+    margin-bottom: 30px;
+    margin-top: 68px;
+    margin-right: 176px;
+}
+
+group_1 .menu div {
+    width: 334px;
+    height: 322px;
+    /* background-image: url(image/menu/Place_Your_Image_Here_\(Double_Click_to_Edit\).png); */
+    margin-left: 94px;
+    background-size: cover;
 }
 
 
