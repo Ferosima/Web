@@ -164,6 +164,16 @@ header div[id="meal_2"] {
     background-image: url(../image/Place_Your_Image_Here_\(Double_Click_to_Edit\)_.png);
 }
 
+header div[id="meal_3"] {
+    position: absolute;
+    width: 609px;
+    height: 478px;
+    margin-top: 709px;
+    margin-left: 899px;
+    z-index: 3;
+    background-image: url(../image/leaves_1.png);
+}
+
 
 /* seach field */
 
@@ -342,7 +352,7 @@ group_2 .column {
     flex: 50%;
     text-align: left;
     color: #ffffff;
-    font-family: "Montserrat";
+    font-family: Montserrat;
     font-size: 17px;
     font-weight: 400;
     line-height: 25.83px;
@@ -412,6 +422,131 @@ group_3 button {
     text-transform: uppercase;
 }
 
+group_4 {
+    position: relative;
+    background-image: url(../image/Header_Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1082px;
+}
+
+group_4 h1 {
+    padding-top: 130px;
+    padding-left: 290px;
+    color: #f8f6f1;
+    font-family: Reey;
+    font-size: 58px;
+    font-weight: 400;
+    text-align: left;
+}
+
+group_4 p {
+    padding: 12px;
+    color: #f8f6f1;
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 100;
+}
+
+group_4 div[id="image_1"] {
+    position: absolute;
+    width: 1519px;
+    height: 840px;
+    margin-top: -167px;
+    z-index: 2;
+    background-image: url(../image/leaves_2.png);
+}
+
+group_4 div[id="image_2"] {
+    margin-top: 41px;
+    margin-left: 624px;
+    width: 162px;
+    height: 11px;
+    background-color: #fafafa;
+    z-index: 1;
+}
+
+group_4 div[id="image_3"] {
+    position: absolute;
+    width: 1519px;
+    height: 840px;
+    margin-top: 404px;
+    margin-left: 495px;
+    z-index: 2;
+    background-image: url(../image/pizza_1.png);
+    background-repeat: no-repeat;
+}
+
+group_4 div[id="image_4"] {
+    position: absolute;
+    width: 448px;
+    height: 391px;
+    margin-top: 874px;
+    margin-left: 306px;
+    z-index: 3;
+    background-image: url(../image/pizza_2.png);
+    background-repeat: no-repeat;
+}
+
+group_5 {
+    align-items: center;
+    position: absolute;
+    margin-top: 730px;
+    min-height: 891px;
+}
+
+
+/* group_5 .row {
+    display: flex;
+}
+
+group_5 .column {
+    flex: 100%;
+    text-align: left;
+    color: #ffffff;
+}
+
+group_5 .column h1 {
+    color: #393939;
+    font-family: Reey;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    background-color: lightsalmon;
+}
+
+group_5 .column p {
+    color: #333d42;
+    font-family: "Open Sans";
+    font-size: 19px;
+    font-weight: 400;
+    text-align: left;
+} */
+
+group_5 .row {
+    display: flex;
+}
+
+group_5 .column {
+    flex: 30%;
+    text-align: left;
+}
+
+group_5 .column h1 {
+    color: #27292c;
+    font-family: "Open Sans-Extrabold";
+    font-size: 58px;
+    font-weight: 700;
+    text-align: left;
+}
+
+group_5 .column p {
+    color: #27292c;
+    font-family: "Open Sans";
+    font-size: 29px;
+    font-weight: 700;
+}
+
 
 /*  */
 
@@ -444,7 +579,7 @@ group_3 button {
 }
 
 @font-face {
-    font-family: Monserrat;
+    font-family: Montserrat;
     /* Гарнитура шрифта */
     src: url(../font/montserrat.ttf);
     /* Путь к файлу со шрифтом */
