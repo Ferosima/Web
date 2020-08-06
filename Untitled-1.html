@@ -1,212 +1,311 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>My code</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-</head>
+  <body>
+    <div
+      class="container background"
+      style="
+        background-image: url(image/Header_Background.png);
+        background-size: 100% 89%;
+      "
+    >
+      <ul class="navigation" id="navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#our_story">Our Story</a></li>
+        <li><a href="#contact_us">Contact Us</a></li>
+        <li style="padding-right: 58px;">
+          <form>
+            <input type="search" />
+            <i class="fa fa-search"></i>
+          </form>
+        </li>
+      </ul>
+      <div class="home" id="home">
+        <div class="column_1">
+          <div>
+            <img src="image/logo.svg" />
+          </div>
+          <h2>Italian Food</h2>
+          <h3>LOREMIPSUM DOLOR</h3>
+          <div>
+            <button>Read more</button>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipi<br />
+            scing elit, sed do iusmod tempor incididunt ut <br />labore et
+            dolore magna.
+          </p>
+        </div>
+        <div class="column_2">
+          <div class="image_1">
+            <img src="image/Home_meal_1.png" />
+          </div>
+          <div class="image_2">
+            <img src="image/Home_meal_2.png" />
+          </div>
+          <div class="image_3">
+            <img src="image/Home_leaves.png" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-<body>
-    <header>
-        <div class="container">
-            <div>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li>
-                            <form>
-                                <input type="search">
-                                <i class="fa fa-search"></i>
-                            </form>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="logo"></div>
-            <div id="meal_1"></div>
-            <div id="meal_2"></div>
-            <div id="meal_3"></div>
-            <h1>Italian Food</h1>
-            <h2>LOREMIPSUM DOLOR</h2>
-            <div id="button_container">
-                <button>Read more</button>
-            </div>
-            <p id="text_1">Lorem ipsum dolor sit amet, consectetur adipi<br> scing elit, sed do iusmod tempor incididunt ut <br>labore et dolore magna.</p>
+    <div class="menu" id="menu">
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+        Vivamus lacinia odio vitae vestibulum vestibulum.
+      </p>
+      <div class="row">
+        <div class="column">
+          <div class="image">
+            <img src="image/menu/meal_1.png" />
+          </div>
+          <p class="text_1">Lorem ipsum</p>
+          <p class="text_2">
+            Lorem ipsum dolor sit amet,<br />consectetur adipisicing...
+          </p>
         </div>
-    </header>
+        <div class="column" style="margin-left: 97px;">
+          <div class="image">
+            <img src="image/menu/meal_2.png" />
+          </div>
+          <p class="text_1">Lorem ipsum</p>
+          <p class="text_2">
+            Lorem ipsum dolor sit amet,<br />consectetur adipisicing...
+          </p>
+        </div>
+        <div class="column" style="margin-left: 97px;">
+          <div class="image">
+            <img src="image/menu/meal_3.png" />
+          </div>
+          <p class="text_1">Lorem ipsum</p>
+          <p class="text_2">
+            Lorem ipsum dolor sit amet,<br />consectetur adipisicing...
+          </p>
+        </div>
+      </div>
+      <div style="margin-top: 122px;">
+        <button>Show more</button>
+      </div>
+    </div>
 
-    <group_1>
-        <div class="container">
-            <h1 id="head">Lorem Ipsum Dolor</h1>
-            <p id="head text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vivamus lacinia odio vitae vestibulum vestibulum. </p>
-            <ul class="menu">
-                <div id="conteiner">
-                    <div id="one"></div>
-                    <p id="menu head text">Lorem ipsum</p>
-                    <p id="menu text">
-                        Lorem ipsum dolor sit amet,<br>consectetur adipisicing...
-                    </p>
-                </div>
-                <div id="conteiner">
-                    <div id="two"></div>
-                    <p id="menu head text">Lorem ipsum</p>
-                    <p id="menu text">
-                        Lorem ipsum dolor sit amet,<br>consectetur adipisicing...
-                    </p>
-                </div>
-                <div id="conteiner">
-                    <div id="three"></div>
-                    <p id="menu head text">Lorem ipsum</p>
-                    <p id="menu text">
-                        Lorem ipsum dolor sit amet,<br>consectetur adipisicing...
-                    </p>
-                </div>
-            </ul>
-            <button id="button">Show more</button>
+    <div class="our_story" id="our_story">
+      <h2>Lorem Ipsum Dolor</h2>
+      <div class="row">
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br />do
+            eiusmod tempor incididunt ut labore et dolore magna<br />aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation<br />ullamco laboris
+            nisi ut aliquip ex quia voluptas sit aspernatur
+          </p>
         </div>
-    </group_1>
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br />do
+            eiusmod tempor incididunt ut labore et dolore magna<br />aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation<br />ullamco laboris
+            nisi ut aliquip.
+          </p>
+        </div>
+      </div>
+      <div>
+        <button>More info</button>
+      </div>
+    </div>
 
-    <group_2>
-        <div class="container">
-            <h1 id="head">Lorem Ipsum Dolor </h1>
-            <div class="row">
-                <div class="column" style="padding-left: 191px;">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex quia voluptas
-                        sit aspernatur
-                    </p>
-                </div>
-                <div class="column">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br>ullamco laboris nisi ut aliquip.</p>
+    <div class="shares" id="shares">
+      <div class="row">
+        <div class="column">
+          <div>
+            <img src="image/menu/meal_3.png" />
+          </div>
+        </div>
+        <div class="column">
+          <p class="title">Discount up to 50% <br />All Excursions</p>
+          <p class="text">
+            Lorem ipsum dolor sit amet,<br />consectetuer adipiscing elit, sed
+            diam<br />nonummy nibh euismod tincidunt ut <br />laoreet dolore
+            magna aliquam erat volutpat.
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p class="title">January’s Promo:<br />Buy 1 Get 1 Free!</p>
+          <p class="text">
+            Lorem ipsum dolor sit amet,<br />consectetuer adipiscing elit, sed
+            diam<br />nonummy nibh euismod tincidunt ut <br />laoreet dolore
+            magna aliquam erat volutpat.
+          </p>
+          <button>Read More</button>
+        </div>
+        <div class="column">
+          <div>
+            <img src="image/menu/meal_2.png" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-                </div>
-            </div>
-            <button>More info</button>
+    <div
+      class="pizza background"
+      id="pizza"
+      style="
+        background-image: url(image/Header_Background.png);
+        background-size: 100% 86%;
+      "
+    >
+      <div class="row">
+        <div class="column">
+          <img src="image/pizza_leaves_1.png" />
         </div>
-    </group_2>
-    <group_3>
-        <div class="container">
-            <div class="row">
-                <div class="column" style="padding-left: 191px;">
-                    <div id="first_meal"></div>
-                </div>
-                <div class="column">
-                    <h1>Discount up to 50% All Excursions</h1>
-                    <p>Lorem ipsum dolor sit amet,<br>consectetuer adipiscing elit, sed diam<br>nonummy nibh euismod tincidunt ut <br>laoreet dolore magna aliquam erat volutpat.</p>
-                    <button>Read More</button>
-                </div>
+        <div class="column">
+          <h2 style="margin-top: 278px;">Lorem Ipsum Dolor Sit Amer</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
+            sed do eiusmod tempor incididunt ut labore et dolore
+          </p>
+          <div class="rectangle"></div>
+          <div class="image_container">
+            <div style="margin-left: 220px;">
+              <img src="image/pizza_1.png" />
             </div>
-            <div class="row">
-                <div class="column" style="padding-left: 191px;">
-                    <h1>January’s Promo: Buy 1 Get 1 Free!</h1>
-                    <p>Lorem ipsum dolor sit amet,<br>consectetuer adipiscing elit, sed diam<br>nonummy nibh euismod tincidunt ut <br>laoreet dolore magna aliquam erat volutpat.</p>
-                    <button>Read More</button>
-                </div>
-                <div class="column">
-                    <div id="second_meal"></div>
-                </div>
+            <div style="margin-top: -360px; margin-left: 33px;">
+              <img src="image/pizza_2.png" />
             </div>
+          </div>
         </div>
-    </group_3>
-    <group_4>
-        <div class="container">
-            <div id="image_1"></div>
+        <div class="column">
+          <img src="image/pizza_leaves_2.png" />
+        </div>
+      </div>
+    </div>
 
-            <div id="image_3"></div>
-            <div id="image_4"></div>
-            <h1>Lorem Ipsum Dolor Sit Amer</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore </p>
-            <div id="image_2"></div>
+    <div class="info" id="info">
+      <div class="row">
+        <div class="column">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consecte<br />
+            sectetur adipisicing elit, tation omne<br />
+            ullamco laboris nisi ut aliqolore.
+          </p>
         </div>
-    </group_4>
-    <group_5>
-        <div class="container">
-            <div class="row">
-                <div class="column" style="padding-left: 160px;">
-                    <h1>Lorem Ipsum</h1>
-                    <p>Lorem ipsum dolor sit amet, consecte<br> sectetur adipisicing elit, tation omne<br> ullamco laboris nisi ut aliqolore.
-                    </p>
-                </div>
-                <div class="column">
-                    <h1>Lorem Ipsum</h1>
-                    <p>Lorem ipsum dolor sit amet, consecte<br> sectetur adipisicing elit, tation omne<br> ullamco laboris nisi ut aliqolore.</p>
-                </div>
-                <div class="column">
-                    <h1>Lorem Ipsum</h1>
-                    <p>Lorem ipsum dolor sit amet, consecte<br> sectetur adipisicing elit, tation omne<br> ullamco laboris nisi ut aliqolore.</p>
-                </div>
-            </div>
-            <div>
-                <p id="text_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei-<br>usmod tempor incididunt ut labore et dolore magna aliqua. Ut <br>enim ad minim veniam, quis </p>
-            </div>
-            <div>
-                <p id="text_2">
-                    Lorem Ipsum
-                </p>
-            </div>
+        <div class="column">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consecte<br />
+            sectetur adipisicing elit, tation omne<br />
+            ullamco laboris nisi ut aliqolore.
+          </p>
         </div>
-    </group_5>
-    <group_6>
-        <div class="container">
-            <div id="leaves"></div>
-            <h1 id="title">Title Here</h1>
-            <p id="title text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus <br> lacinia odio vitae vestibulum vestibulum. </p>
-            <form>
-                <input type="search">
-                <button class="fa fa-search">Subscribe</button>
-            </form>
+        <div class="column">
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consecte<br />
+            sectetur adipisicing elit, tation omne<br />
+            ullamco laboris nisi ut aliqolore.
+          </p>
+        </div>
+      </div>
+      <div class="excerption">
+        <p class="text_1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          ei-<br />usmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          <br />enim ad minim veniam, quis
+        </p>
+        <p class="text_2">
+          Lorem Ipsum
+        </p>
+      </div>
+    </div>
 
+    <div
+      class="subscribe background"
+      id="Subscribe"
+      style="
+        background: url(image/subscribe_background.png);
+        height: 1056px;
+        background-repeat: repeat-x;
+        background-position: 50% 50%;
+      "
+    >
+      <div class="column" style="align-self: flex-end;">
+        <img src="image/subscribe_leaves_1.png" />
+      </div>
+      <div class="column">
+        <h2>Title Here</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          <br />
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <form>
+          <input type="search" />
+          <button class="fa fa-search">Subscribe</button>
+        </form>
+      </div>
+      <div class="column" style="align-self: flex-start;">
+        <img src="image/subscribe_leaves_2.png" />
+      </div>
+    </div>
+
+    <div class="contact" id="contact_us">
+      <div class="row " style="width: 1440px;">
+        <div class="column">
+          <h2>Title Here</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consecte-<br />tur adipiscing elit.
+            Aliquam at dignis-<br />sim nunc, id maximus ex. Etiam nec<br />dignissim
+            elit, at dignissim enim.
+          </p>
         </div>
-    </group_6>
-    <group_7>
-        <div class="container">
-            <div class="row">
-                <div class="column" style="padding-left: 84px;margin-top: 338px;">
-                    <h1>Title Here</h1>
-                    <p>Lorem ipsum dolor sit amet, consecte-<br>tur adipiscing elit. Aliquam at dignis-<br>sim nunc, id maximus ex. Etiam nec<br>dignissim elit, at dignissim enim.</p>
-                    <div id="social networks"></div>
-                </div>
-                <div class="column" style=" margin-top: 338px;">
-                    <div class="row">
-                        <div class="column">
-                            <h1>About</h1>
-                            <ul class="menu">
-                                <li><a href="#">History</a></li>
-                                <li><a href="#">Our Team</a></li>
-                                <li><a href="#">Brand Guidelines</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <h1>Services</h1>
-                            <ul class="menu">
-                                <li><a href="#">How to Order</a></li>
-                                <li><a href="#">Our Product</a></li>
-                                <li><a href="#">Order Status</a></li>
-                                <li><a href="#">Promo</a></li>
-                                <li><a href="#">Payment Method</a></li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <h1>Other</h1>
-                            <ul class="menu">
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Help</a></li>
-                                <li><a href="#">Privacy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="column">
+          <div class="row">
+            <div class="column">
+              <h2 >About</h2>
+              <ul class="list" >
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Brand Guidelines</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
             </div>
+            <div class="column">
+              <h2>Services</h2>
+              <ul class="list">
+                <li><a href="#">How to Order</a></li>
+                <li><a href="#">Our Product</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Promo</a></li>
+                <li><a href="#">Payment Method</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Other</h2>
+              <ul class="list">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </group_7>
+      </div>
+    </div>
+
+   
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
