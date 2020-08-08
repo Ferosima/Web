@@ -1,6 +1,5 @@
 "use strict";
 let navigation_box = document.getElementById("navigation");
-let navigation_bottom_coord = navigation_box.getBoundingClientRect().bottom;
 let menu_box = document.getElementById("menu");
 let shares_box = document.getElementById("shares");
 let info_box = document.getElementById("info");
@@ -11,10 +10,10 @@ let getTop = (box) => {
 let getBottom = (box) => {
   return box.getBoundingClientRect().bottom;
 };
-let isHere = (box,marginTop,marginBottom) => {
+let isHere = (box, marginTop, marginBottom) => {
   return (
-    getBottom(box)+navigation_box.getBoundingClientRect().bottom > navigation_bottom_coord &&
-    navigation_bottom_coord >= getTop(box)
+    getBottom(box) > getBottom(navigation_box) &&
+    getBottom(navigation_box) >= getTop(box)
   );
 };
 window.addEventListener("scroll", function () {
@@ -24,8 +23,32 @@ window.addEventListener("scroll", function () {
     isHere(info_box) ||
     isHere(contact_box)
   ) {
-    navigation_box.style.backgroundColor = "#27292c";
+    document.getElementById("navigation").style.backgroundColor = "#27292c";
   } else {
-    navigation_box.style.removeProperty("background-color");
+    document
+      .getElementById("navigation")
+      .style.removeProperty("background-color");
   }
 });
+if (window.innerWidth <= 768) {
+  let search_form = document
+    .getElementById("navigation_menu")
+    .lastElementChild.cloneNode(true);
+  document.getElementById("navigation_menu").prepend(search_form);
+  document.getElementById("navigation_menu").lastElementChild.remove();
+}
+let handler = () => {
+  let navigation_list = document.getElementById("navigation_menu");
+  if(navigation_list.style.visibility==="visible"){
+  navigation_list.style.visibility="hidden"
+  navigation_list.style.height="0"
+  
+  }
+  else{
+    navigation_list.style.visibility="visible"
+    navigation_list.style.height="100%"
+    document.getElementById("navigation").style.backgroundColor = "#27292c";
+  }
+};
+let navigation_button = document.getElementById("navigation_button");
+navigation_button.addEventListener("click", handler);
