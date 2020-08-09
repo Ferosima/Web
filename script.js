@@ -10,24 +10,30 @@ let getTop = (box) => {
 let getBottom = (box) => {
   return box.getBoundingClientRect().bottom;
 };
-let isHere = (box, marginTop, marginBottom) => {
+let isHere = (box) => {
   return (
     getBottom(box) > getBottom(navigation_box) &&
     getBottom(navigation_box) >= getTop(box)
   );
 };
 window.addEventListener("scroll", function () {
-  if (
-    isHere(menu_box) ||
-    isHere(shares_box) ||
-    isHere(info_box) ||
-    isHere(contact_box)
-  ) {
-    document.getElementById("navigation").style.backgroundColor = "#27292c";
+  if (window.innerWidth > 768) {
+    if (
+      isHere(menu_box) ||
+      isHere(shares_box) ||
+      isHere(info_box) ||
+      isHere(contact_box)
+    ) {
+      document.getElementById("navigation").style.backgroundColor = "#27292c";
+    } else {
+      document
+        .getElementById("navigation")
+        .style.removeProperty("background-color");
+    }
   } else {
-    document
-      .getElementById("navigation")
-      .style.removeProperty("background-color");
+    document.getElementById("navigation").style.backgroundColor = "#27292c";
+    if (navigation_list.style.visibility === "visible") {
+    } 
   }
 });
 if (window.innerWidth <= 768) {
@@ -38,15 +44,13 @@ if (window.innerWidth <= 768) {
   document.getElementById("navigation_menu").lastElementChild.remove();
 }
 let handler = () => {
-  let navigation_list = document.getElementById("navigation_menu");
-  if(navigation_list.style.visibility==="visible"){
-  navigation_list.style.visibility="hidden"
-  navigation_list.style.height="0"
-  
-  }
-  else{
-    navigation_list.style.visibility="visible"
-    navigation_list.style.height="100%"
+  let navigation_list = document.getElementById("navigation_menu_container");
+  if (navigation_list.style.visibility === "visible") {
+    navigation_list.style.visibility = "hidden";
+    navigation_list.style.height = "0";
+  } else {
+    navigation_list.style.visibility = "visible";
+    navigation_list.style.height = "100%";
     document.getElementById("navigation").style.backgroundColor = "#27292c";
   }
 };

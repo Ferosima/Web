@@ -39,7 +39,7 @@ img {
   justify-content: flex-end;
   list-style: none;
 }
-.navigation .navigation_button_container  {
+.navigation .navigation_button_container {
   width: 0;
   height: 0;
   visibility: hidden;
@@ -55,17 +55,16 @@ img {
   list-style: none;
 }
 
-.navigation ul{
-  padding:0;
+.navigation ul {
+  padding: 0;
 }
-.navigation_list  li {
+.navigation_list li {
   font-family: "Open Sans";
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
   padding: 0 20px;
 }
-
 
 .navigation_list li a {
   text-decoration: none;
@@ -237,6 +236,7 @@ form:hover .fa {
   font-size: 23px;
 }
 .menu button {
+  margin-top: 122px;
   margin-bottom: 50px;
   width: 334px;
   height: 75px;
@@ -356,6 +356,7 @@ form:hover .fa {
 }
 
 .pizza h2 {
+  margin-top: 200px;
   color: #f8f6f1;
   font-family: Reey;
   font-size: 58px;
@@ -430,6 +431,7 @@ form:hover .fa {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  min-height: 1056px;
 }
 .subscribe {
   display: flex;
@@ -443,6 +445,9 @@ form:hover .fa {
 .subscribe .column {
   color: #ffffff;
 }
+.subscribe .leaves {
+  padding-right: 30px;
+}
 .subscribe .column h2 {
   color: #ffffff;
   font-family: "Open Sans";
@@ -453,7 +458,7 @@ form:hover .fa {
 .subscribe .column p {
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
 }
 
@@ -549,7 +554,6 @@ form:hover .fa {
   color: #54524f;
 }
 
-
 @media only screen and (max-width: 768px) {
   .navigation {
     position: fixed;
@@ -559,12 +563,17 @@ form:hover .fa {
     flex-flow: column wrap;
     justify-content: flex-end;
     list-style: none;
+    z-index: 2;
   }
-  
- .navigation .navigation_button_container {
+
+  .navigation .navigation_button_container {
     width: auto;
     height: auto;
     visibility: visible;
+  }
+  .navigation [id="navigation_menu_container"] {
+    visibility: hidden;
+    height: 0;
   }
   .navigation_list {
     right: 0;
@@ -575,101 +584,369 @@ form:hover .fa {
     justify-content: flex-end;
     list-style: none;
   }
-  
-  .navigation ul{
-    padding:0;
-  }
-  .navigation_list  li {
+
+  .navigation_list li {
     font-family: "Open Sans";
     font-size: 17px;
     font-weight: 700;
     text-transform: uppercase;
     padding: 20px 0px;
   }
-  
-  
+
   .navigation_list li a {
     text-decoration: none;
     color: #ffffff;
   }
   form {
     position: relative;
-    width:90vw;
+    width: 90vw;
     height: 51px;
     background: white;
     box-sizing: border-box;
     border-radius: 25px;
     border: 4px solid white;
     padding: 0 10px;
-
   }
-  
-  input {
-    width: 100%;
-    height: 42.5px;
-    outline: 0;
-    border: 0;
-    font-size: 1em;
-    border-radius: 20px;
-
-  }
-  
-  .fa {
-    box-sizing: border-box;
-    padding: 10px;
-    width: 42.5px;
-    height: 42.5px;
-    position: absolute;
-    outline: 0;
-    border: 4px solid white;
-    background-image: url(../image/Search.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #ffffff;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 1.2em;
-    cursor: pointer;
-  }
-
-  /* .navigation{
+  .home .row {
     flex-direction: column;
-    display: block;
-    text-align:center;
     align-items: center;
   }
-  .navigation [id="navigation_button"] {
-    visibility: visible;
-    right: 0;
-    left: 0;
+  .home .column_1 {
+    text-align: center;
+  }
+  .home .column_1 img {
+    width: 20vw;
+  }
+  .home .column_1 h2 {
+    font-size: 58px;
   }
 
-  .navigation ul[id="navigation_menu"] {
-    flex-flow: column;
+  .home .column_1 h3 {
+    font-size: 15px;
   }
-   */
-}
+  .home .column_1 p {
+    font-size: 15px;
+  }
 
-
-@media only screen and (max-width: 425px) {
+  .home .column_1 button {
+    width: 30vw;
+    height: 47px;
+  }
+  .home .column_1 button {
+    width: 60vw;
+    height: 47px;
+  }
   .home .column_2 .image_1 {
     margin: auto;
+    width: 60vw;
   }
   .home .column_2 .image_2 {
     margin: auto;
-  
+    width: 30vw;
+    padding-right: 30vw;
   }
   .home .column_2 .image_3 {
     margin: auto;
-   
+    width: 50vw;
+  }
+  .menu h2 {
+    font-size: 45px;
+  }
+
+  .menu p {
+    font-size: 15px;
+  }
+
+  .menu .column {
+    margin-top: 40px;
+  }
+  .menu .column .image {
+    margin: auto;
+    width: 40vw;
+    height: auto;
+  }
+
+  .menu .column p.text_1 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .menu .column p.text_2 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .menu button {
+    margin-bottom: 25px;
+    margin-top: 0;
+    width: 50vw;
+    height: 10vw;
+    font-size: 20px;
+  }
+  .our_story {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+  }
+  .our_story h2 {
+    font-size: 45px;
+  }
+  .our_story .column p {
+    font-size: 12px;
+  }
+
+  .our_story button {
+    margin-top: 74px (auto);
+    margin-bottom: 5vw;
+    width: 40vw;
+    height: 6vw;
+    font-size: 15px;
+  }
+
+  .shares .column {
+    padding-top: 51px;
+    text-align: left;
+  }
+  .shares .column img {
+    width: 50vw;
+  }
+  .shares .column p.title {
+    font-size: 30px;
+  }
+
+  .shares .column p.text {
+    font-size: 12px;
+  }
+
+  .shares button {
+    width: 20vw;
+    height: 7vw;
+    font-size: 15px;
+  }
+
+  .pizza .row {
+    z-index: 2;
+  }
+  .pizza h2 {
+    margin-top: 50px;
+    font-size: 35px;
+  }
+  .pizza p {
+    padding: 6px 0;
+    font-size: 15px;
+  }
+  .pizza .leaves {
+    align-self: center;
+    width: 20vw;
+  }
+  .info {
+    flex-direction: column;
+
+    height: 891px (auto);
+  }
+
+  .info .row {
+    display: flex;
+  }
+
+  .info .column {
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .info .column h2 {
+    font-size: 25px;
+  }
+
+  .info .column p {
+    font-size: 12px;
+  }
+  .info .excerption {
+    margin-top: 100px;
+  }
+  .info .excerption p.text_1 {
+    font-size: 13px;
+  }
+
+  .info .excerption p.text_2 {
+    font-size: 12px;
+  }
+  .subscribe_container {
+    min-height: 250px;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .subscribe .leaves {
+    padding-right: 3vw;
+  }
+  .subscribe .column h2 {
+    font-size: 35px;
+  }
+  .subscribe .column p {
+    font-size: 15px;
+  }
+  .subscribe form {
+    width: 70vw;
+    height: 5vw;
+  }
+
+  .subscribe input {
+    width: 100%;
+    height: 5vw;
+    font-size: 25px;
+  }
+
+  .subscribe .fa {
+    width: 20vw;
+    height: 5vw;
+    font-size: 12px;
+  }
+  .contact {
+    padding: 0;
+  }
+
+  .contact .column {
+    padding: 0 20px;
+  }
+
+  .contact h2 {
+    font-size: 15px;
+  }
+
+  .contact p {
+    font-size: 12px;
+  }
+  .contact .list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact .list li {
+    font-size: 11px;
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .home .column_1 button {
+    width: 60vw;
+    height: 47px;
+  }
+  .home .column_2 .image_1 {
+    margin: auto;
+    width: 80vw;
+  }
+  .home .column_2 .image_2 {
+    margin: auto;
+    width: 30vw;
+  }
+  .home .column_2 .image_3 {
+    margin: auto;
+    width: 50vw;
+  }
+  .menu h2 {
+    font-size: 35px;
+  }
+  .menu .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .menu .column {
     padding: 0;
   }
+  .menu .column .image {
+    margin: auto;
+    width: 60vw;
+  }
+
+  .shares .column img {
+    width: 70vw;
+  }
+  .shares .column p.title {
+    font-size: 25px;
+  }
+  .shares button {
+    width: 40vw;
+    height: 7vw;
+    font-size: 10px;
+  }
   .pizza .row {
     flex-flow: wrap;
+  }
+  .pizza.column {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .pizza h2 {
+    margin-top: auto;
+    font-size: 20px;
+  }
+  .pizza p {
+    padding: 6px 0;
+    font-size: 10px;
+  }
+  .pizza .rectangle {
+    width: 20vw;
+    height: 1vw;
+  }
+  .pizza .leaves {
+    width: 20vw;
+  }
+  .subscribe .column h2 {
+    font-size: 25px;
+  }
+  .subscribe .column p {
+    font-size: 13px;
+  }
+  .subscribe form {
+    width: 70vw;
+    height: 7vw;
+  }
+
+  .subscribe input {
+    width: 100%;
+    height: 7vw;
+    font-size: 25px;
+  }
+
+  .subscribe .fa {
+    height: 7vw;
+    font-size: 5px;
+    padding: 0;
+  }
+ 
+  .contact .column {
+    padding: 0 5px;
+  }
+
+  .contact h2 {
+    font-size: 17px;
+  }
+
+  .contact p {
+    font-size: 12px;
+  }
+  .contact .list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact .list li {
+    font-size: 11px;
+    padding: 10px 0;
   }
 }
 
