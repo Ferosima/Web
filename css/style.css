@@ -31,13 +31,15 @@ img {
   justify-content: center;
 }
 .navigation {
-  position: fixed;
+ position:fixed;
   left: 0;
   right: 0;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
   list-style: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
 }
 .navigation .navigation_button_container {
   width: 0;
@@ -129,7 +131,7 @@ form:hover .fa {
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
-  padding-top: 116px;
+  margin-top: 116px;
 }
 .home.row {
   flex-direction: row;
@@ -570,10 +572,15 @@ form:hover .fa {
     width: auto;
     height: auto;
     visibility: visible;
+    background-color: #27292c;
+   
   }
   .navigation [id="navigation_menu_container"] {
-    visibility: hidden;
-    height: 0;
+    height: 100vh;
+    width: 0vw;
+    transition-property:width;
+    transition-duration: 0.7s;
+  
   }
   .navigation_list {
     right: 0;
@@ -583,6 +590,7 @@ form:hover .fa {
     align-items: center;
     justify-content: flex-end;
     list-style: none;
+    visibility: hidden;
   }
 
   .navigation_list li {

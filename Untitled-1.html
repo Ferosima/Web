@@ -10,6 +10,7 @@
   <body>
     <!-- HEADER -->
     <div
+      id="header"
       class="container background"
       style="
         background-image: url(image/Header_Background.png);
@@ -18,27 +19,31 @@
     >
       <!-- NAVIGATION -->
       <div class="navigation" id="navigation">
-        <div   class="navigation_button_container" style="text-align: right;">
+        <div class="navigation_button_container" style="text-align: right;">
           <span
-          id="navigation_button"
-            style="font-size: 30px; cursor: pointer; color: white; padding: 10px 20px;"
-            >&#9776;</span
-          >
+            id="navigation_button"
+            style="
+              font-size: 30px;
+              cursor: pointer;
+              color: white;
+              padding: 10px 20px;
+            "
+            >&#9776;</span>
         </div>
         <div id="navigation_menu_container">
-        <ul class="navigation_list" id="navigation_menu">
-          <li><a href="#home">Home</a></li>
+         <ul class="navigation_list" id="navigation_menu">
+           <li><a href="#home">Home</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#our_story">Our Story</a></li>
           <li><a href="#contact_us">Contact Us</a></li>
-          <li id="search_form">
-            <form >
-              <input type="search" />
-              <i class="fa fa-search"></i>
+          <li>
+            <form id="search_form">
+              <input type="search" id="search"/>
+              <button type="submit"></i><i class="fa fa-search"></i></button> 
             </form>
           </li>
         </ul>
-      </div>
+        </div>
       </div>
       <!-- HOME -->
       <div class="home" id="home">
@@ -82,7 +87,7 @@
       <div class="row">
         <div class="column">
           <div class="image">
-            <img src="image/menu/meal_1.png"/>
+            <img src="image/menu/meal_1.png" />
           </div>
           <p class="text_1">Lorem ipsum</p>
           <p class="text_2">
@@ -108,7 +113,7 @@
           </p>
         </div>
       </div>
-      <div >
+      <div>
         <button>Show more</button>
       </div>
     </div>
@@ -182,10 +187,10 @@
       "
     >
       <div class="row">
-        <div class="column leaves"  style="align-self: center;">
+        <div class="column leaves" style="align-self: center;">
           <img src="image/pizza_leaves_1.png" />
         </div>
-        <div class="column ">
+        <div class="column">
           <h2 style>Lorem Ipsum Dolor Sit Amer</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />

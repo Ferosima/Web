@@ -1,5 +1,6 @@
 "use strict";
 let navigation_box = document.getElementById("navigation");
+let home_box = document.getElementById("home");
 let menu_box = document.getElementById("menu");
 let shares_box = document.getElementById("shares");
 let info_box = document.getElementById("info");
@@ -16,24 +17,23 @@ let isHere = (box) => {
     getBottom(navigation_box) >= getTop(box)
   );
 };
+
 window.addEventListener("scroll", function () {
   if (window.innerWidth > 768) {
-    if (
-      isHere(menu_box) ||
-      isHere(shares_box) ||
-      isHere(info_box) ||
-      isHere(contact_box)
-    ) {
+    if (getTop(home_box) < 0) {
       document.getElementById("navigation").style.backgroundColor = "#27292c";
-    } else {
+
+    }
+    else {
       document
         .getElementById("navigation")
         .style.removeProperty("background-color");
     }
   } else {
     document.getElementById("navigation").style.backgroundColor = "#27292c";
+
     if (navigation_list.style.visibility === "visible") {
-    } 
+    }
   }
 });
 if (window.innerWidth <= 768) {
@@ -43,16 +43,39 @@ if (window.innerWidth <= 768) {
   document.getElementById("navigation_menu").prepend(search_form);
   document.getElementById("navigation_menu").lastElementChild.remove();
 }
-let handler = () => {
-  let navigation_list = document.getElementById("navigation_menu_container");
-  if (navigation_list.style.visibility === "visible") {
+
+const handler = () => {
+  let navigation_container = document.getElementById(
+    "navigation_menu_container"
+  );
+  let navigation_list = document.getElementById("navigation_menu");
+  if (navigation_container.style.width == "100vw") {
+    navigation_container.style.width = "0vw";
+    document.querySelector("body").style.overflowY = "visible";
+
     navigation_list.style.visibility = "hidden";
-    navigation_list.style.height = "0";
   } else {
-    navigation_list.style.visibility = "visible";
-    navigation_list.style.height = "100%";
-    document.getElementById("navigation").style.backgroundColor = "#27292c";
+    navigation_container.style.width = "100vw";
+    document.querySelector("body").style.overflowY = "hidden";
+    navigation_container.style.backgroundColor = "#27292c";
+
+    navigation_container.addEventListener("transitionend", function f() {
+      if (navigation_container.style.width == "100vw") {
+        navigation_list.style.visibility = "visible";
+      }
+    });
   }
 };
+
 let navigation_button = document.getElementById("navigation_button");
 navigation_button.addEventListener("click", handler);
+
+// let search_form = document.getElementById("search_form")
+// search_form.addEventListener("submit", scrollByItem);
+
+// function scrollByItem() {
+// let search=document.getElementById("search")
+// alert(search.value)
+// let elmnt = document.getElementById("search.value");
+// elmnt.scrollIntoView();
+// }
