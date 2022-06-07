@@ -1,0 +1,563 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-size: contain;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0.86957rem 0 0.86957rem;
+}
+
+.navigation li {
+  font-family: "Open Sans";
+  font-size: 0.73913rem;
+  font-weight: 700;
+  margin-left: 2.73913rem;
+  text-transform: uppercase;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+form {
+  position: relative;
+  width: 7.95652rem;
+  height: 2.21739rem;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 1.08696rem;
+  border: 0.17391rem solid white;
+}
+
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.84783rem;
+  outline: 0;
+  border: 0;
+  font-size: 1em;
+  border-radius: 0.86957rem;
+  padding: 0 0.86957rem;
+}
+
+.fa {
+  box-sizing: border-box;
+  padding: 0.43478rem;
+  width: 1.84783rem;
+  height: 1.84783rem;
+  position: absolute;
+  outline: 0;
+  border: 0.17391rem solid white;
+  background-image: url(../image/Search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+form:hover {
+  cursor: pointer;
+}
+
+form:hover input {
+  display: block;
+}
+
+form:hover .fa {
+  color: white;
+}
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home .column_1 {
+  text-align: left;
+  margin-top: 5.04348rem;
+  margin-left: 4.43478rem;
+}
+
+.home .column_1 h2 {
+  color: #ffffff;
+  font-family: Reey;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.home .column_1 h3 {
+  color: #ffffff;
+  font-family: "Open Sans-Italic";
+  font-size: 1.08696rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.20043rem;
+}
+.home .column_1 p {
+  color: #ffffff;
+  font-family: "Open Sans-Italic";
+  font-size: 0.91304rem;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+.home .column_1 button {
+  width: 9.47826rem;
+  height: 2.04348rem;
+  background-color: #ffffff;
+  opacity: 0.9;
+  border-radius: 0.95652rem;
+  border: 0;
+  cursor: pointer;
+  color: #2e3034;
+  font-family: "Open Sans-Extrabold";
+  font-size: 1.08696rem;
+  text-transform: uppercase;
+}
+
+.home .column_2 {
+  text-align: left;
+  margin-top: 6.6087rem;
+}
+.home .column_2 .image_1 {
+  margin-left: 5.82609rem;
+}
+.home .column_2 .image_2 {
+  margin-top: -6.82609rem;
+}
+.home .column_2 .image_3 {
+  margin-left: 7.56522rem;
+  margin-top: -13.21739rem;
+}
+
+.menu {
+  margin-top: -4.34783rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu h2 {
+  color: #222328;
+  font-family: "Reey";
+  font-size: 3.26087rem;
+  font-weight: 400;
+}
+
+.menu p {
+  font-family: "Open Sans";
+  color: #2f3135;
+  font-size: 1.17391rem;
+  font-weight: 400;
+}
+
+.menu .column {
+  margin-top: 4.08696rem;
+}
+.menu img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.menu .column .image {
+  width: 14.52174rem;
+  height: 14rem;
+}
+
+.menu .column p {
+  margin-left: 1.17391rem;
+  text-align: left;
+  color: #343434;
+}
+
+.menu .column p.text_1 {
+  font-size: 1.26087rem;
+  font-weight: 700;
+}
+
+.menu .column p.text_2 {
+  font-size: 1rem;
+}
+.menu button {
+  margin-bottom: 2.17391rem;
+  width: 14.52174rem;
+  height: 3.26087rem;
+  background-color: #343434;
+  border-radius: 4.34783rem;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Open Sans-Extrabold";
+  font-size: 1.08696rem;
+  text-transform: uppercase;
+}
+
+.our_story {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  min-height: 24.34783rem;
+  background-color: #27292c;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our_story h2 {
+  color: #ffffff;
+  font-family: "Reey";
+  font-size: 3.26087rem;
+  font-weight: 400;
+}
+.our_story .column p {
+  padding-right: 1.30435rem;
+  padding-left: 1.30435rem;
+  text-align: left;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 0.73913rem;
+  font-weight: 400;
+  line-height: 1.12304rem;
+  /* Text style for "," */
+  font-size: 0.82609rem;
+}
+
+.our_story button {
+  margin-top: 3.21739rem;
+  width: 11.78261rem;
+  height: 2.52174rem;
+  background-color: #fefefe;
+  opacity: 0.9;
+  border-radius: 0.95652rem;
+  border: 0;
+  cursor: pointer;
+  color: #27292c;
+  font-family: "Open Sans-Extrabold";
+  font-size: 1.08696rem;
+  text-transform: uppercase;
+}
+
+.shares {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  min-height: 65.78261rem;
+}
+
+.shares .column {
+  padding-top: 2.21739rem;
+  padding-left: 8.30435rem;
+  text-align: left;
+}
+.shares .column img {
+  width: 26.65217rem;
+  height: 26.56522rem;
+}
+.shares .column p.title {
+  color: #27292c;
+  font-family: "Open Sans-Extrabold";
+  font-size: 2.52174rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.shares .column p.text {
+  color: #27292c;
+  font-family: "Open Sans";
+  font-size: 1.26087rem;
+  font-weight: 700;
+}
+
+.shares button {
+  width: 14.52174rem;
+  height: 3.26087rem;
+  background-color: #27292c;
+  border-radius: 4.34783rem;
+  border: 0;
+  cursor: pointer;
+  font-family: "Open Sans-Extrabold";
+  color: #ffffff;
+  font-size: 1.26087rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pizza {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pizza.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pizza h2 {
+  color: #f8f6f1;
+  font-family: Reey;
+  font-size: 2.52174rem;
+  font-weight: 400;
+}
+.pizza p {
+  padding: 0.52174rem;
+  color: #f8f6f1;
+  font-family: "Montserrat";
+  font-size: 1.08696rem;
+  font-weight: 100;
+}
+.pizza .rectangle {
+  margin: auto;
+  width: 7.04348rem;
+  height: 0.47826rem;
+  background-color: #fafafa;
+}
+.pizza .image_container {
+  text-align: left;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  height: 38.73913rem;
+}
+
+.info .row {
+  display: flex;
+}
+
+.info .column {
+  margin-left: 2.86957rem;
+  text-align: left;
+  color: #ffffff;
+}
+
+.info .column h2 {
+  margin-left: 1rem;
+  color: #393939;
+  font-family: Reey;
+  font-size: 1.82609rem;
+  font-weight: 400;
+}
+
+.info .column p {
+  color: #333d42;
+  font-family: "Open Sans";
+  font-size: 0.82609rem;
+  font-weight: 400;
+}
+.info .excerption {
+  margin-top: 10.13043rem;
+  text-align: center;
+}
+.info .excerption p.text_1 {
+  color: #3f3f3f;
+  font-family: "Open Sans";
+  font-size: 1.08696rem;
+  font-weight: 400;
+}
+
+.info .excerption p.text_2 {
+  color: #3f3f3f;
+  font-family: "Open Sans";
+  font-size: 0.91304rem;
+  font-weight: 700;
+}
+
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.subscribe .column {
+  color: #ffffff;
+}
+.subscribe .column h2 {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 3.26087rem;
+  font-weight: 700;
+}
+
+.subscribe .column p {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 1.30435rem;
+  font-weight: 400;
+}
+
+.subscribe form {
+  position: relative;
+  width: 33.47826rem;
+  height: 2.82609rem;
+  border: none;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 1.30435rem;
+  margin: auto;
+}
+
+.subscribe input {
+  width: 100%;
+  height: 2.82609rem;
+  border: none;
+  color: #54524f;
+  font-family: "Open Sans";
+  font-size: 1.08696rem;
+  font-weight: 400;
+  border-radius: 1.30435rem;
+}
+
+.subscribe .fa {
+  width: 9.78261rem;
+  height: 2.82609rem;
+  border: none;
+  border-radius: 1.30435rem;
+  background-color: #54524f;
+  background-image: none;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 1.08696rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact {
+  padding: 6.04348rem 0 17.3913rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact .row {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 0.86957rem;
+}
+
+.contact h2 {
+  color: #343434;
+  font-family: "Montserrat";
+  font-size: 1.3913rem;
+  font-weight: 400;
+}
+
+.contact p {
+  color: #343434;
+  font-family: "Open Sans";
+  font-size: 0.82609rem;
+  font-weight: 400;
+}
+.contact .list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact .list li {
+  color: #343434;
+  font-family: Montserrat;
+  font-size: 1.04348rem;
+  font-weight: 400;
+  padding: 0.43478rem 0;
+  position: relative;
+}
+
+.contact .list li a {
+  text-decoration: none;
+  color: #54524f;
+}
+
+@font-face {
+  font-family: Reey;
+  /* Гарнитура шрифта */
+  src: url(../font/Reey-Regular.otf);
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Open Sans;
+  /* Гарнитура шрифта */
+  src: url(../font/OpenSans-Light.ttf);
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Open Sans-Extrabold;
+  /* Гарнитура шрифта */
+  src: url(../font/OpenSans-ExtraBold.ttf);
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Open Sans-Italic;
+  /* Гарнитура шрифта */
+  src: url(../font/OpenSans-Italic.ttf);
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Montserrat;
+  /* Гарнитура шрифта */
+  src: url(../font/montserrat.ttf);
+  /* Путь к файлу со шрифтом */
+}
